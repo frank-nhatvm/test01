@@ -14,4 +14,5 @@
 .cxx
 local.properties
 /core-pairing
-/core-pairing-module/build
+/core-pairing-module
+/pairing-sdk-ui

@@ -59,15 +59,19 @@ dependencies {
     implementation ("androidx.compose.ui:ui:1.2.0")
     implementation ("androidx.compose.ui:ui-tooling-preview:1.2.0")
     implementation ("androidx.compose.material:material:1.2.0")
-    implementation(project(":core-pairing-module"))
+
+//    implementation(files("libs/core-pairing-1.4.aar"))
+//    implementation(project(":core-pairing-module"))
 }
+
+
 
 publishing {
     publications {
         register<MavenPublication>("release") {
             groupId = "com.nhatvm"
-            artifactId = "pair"
-            version = "1.0"
+            artifactId = "pairing-sdk"
+            version = "1.1"
 
             afterEvaluate {
                 from(components["release"])

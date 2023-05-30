@@ -56,10 +56,12 @@ android {
 }
 
 dependencies {
-   implementation(project(":pairing-sdk-ui"))
-    // implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar","*.aar"))))
+//   implementation(project(":pairing-sdk-ui"))
+//     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar","*.aar"))))
 
-//    implementation ("com.github.frank-nhatvm:test01:v1.1")
+//    implementation ("com.github.frank-nhatvm:test01:v1.5")
+
+    implementation(files("libs/pairing-sdk-1.1.aar"))
 
     implementation ("androidx.core:core-ktx:1.7.0")
     implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.3.1")

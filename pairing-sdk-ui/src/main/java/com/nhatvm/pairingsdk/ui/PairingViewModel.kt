@@ -2,8 +2,8 @@ package com.nhatvm.pairingsdk.ui
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.nhatvm.core.pairing.model.PairingState
-import com.nhatvm.core.pairing.pairing.CorePairing
+import com.nhatvm.pairingsdk.corePairing.model.PairingState
+import com.nhatvm.pairingsdk.corePairing.pairing.CorePairing
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 
