@@ -47,7 +47,7 @@ android {
 }
 
 dependencies {
-    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar","*.aar"))))
+//    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar","*.aar"))))
     implementation("androidx.core:core-ktx:1.7.0")
 
     implementation("androidx.navigation:navigation-common-ktx:2.5.3")
@@ -59,7 +59,7 @@ dependencies {
     implementation ("androidx.compose.ui:ui:1.2.0")
     implementation ("androidx.compose.ui:ui-tooling-preview:1.2.0")
     implementation ("androidx.compose.material:material:1.2.0")
-//    implementation(project(":core-pairing-module"))
+    implementation(project(":core-pairing-module"))
 }
 
 publishing {
@@ -72,6 +72,12 @@ publishing {
             afterEvaluate {
                 from(components["release"])
             }
+        }
+    }
+    repositories{
+        maven {
+            name = "myrepo"
+            url = uri("${project.buildDir}/repo")
         }
     }
 }
