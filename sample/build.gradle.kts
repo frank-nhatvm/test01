@@ -56,8 +56,8 @@ android {
 }
 
 dependencies {
-   // implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar","*.aar"))))
-    implementation(project(":PairingSDK"))
+   implementation(project(":pairing-sdk-ui"))
+    // implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar","*.aar"))))
 
 //    implementation ("com.github.frank-nhatvm:test01:v1.1")
 

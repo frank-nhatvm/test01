@@ -10,9 +10,9 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/PairingSDK" />
             <option value="$PROJECT_DIR$/core-pairing" />
             <option value="$PROJECT_DIR$/core-pairing-module" />
+            <option value="$PROJECT_DIR$/pairing-sdk-ui" />
             <option value="$PROJECT_DIR$/sample" />
           </set>
         </option>

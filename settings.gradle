@@ -15,7 +15,7 @@ dependencyResolutionManagement {
 }
 rootProject.name = "PlaySDK"
 
-include ':PairingSDK'
+include ':pairing-sdk-ui'
 include ':core-pairing'
 include ':core-pairing-module'
 include ':sample'
