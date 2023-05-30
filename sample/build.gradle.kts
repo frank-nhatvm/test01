@@ -4,6 +4,11 @@ plugins {
     kotlin("kapt")
 }
 
+//repositories{
+//    mavenCentral()
+//    maven { url = uri("https://jitpack.io") }
+//}
+
 android {
     namespace = "com.nhatvm.demor8"
     compileSdk = 33
@@ -53,6 +58,9 @@ android {
 dependencies {
    // implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar","*.aar"))))
     implementation(project(":PairingSDK"))
+
+//    implementation ("com.github.frank-nhatvm:test01:v1.1")
+
     implementation ("androidx.core:core-ktx:1.7.0")
     implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.3.1")
     implementation ("androidx.activity:activity-compose:1.3.1")
